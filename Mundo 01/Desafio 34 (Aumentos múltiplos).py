@@ -1,3 +1,5 @@
+#Aumento multiplos
+
 sal = float(input('Qual é o salário do funcionário R$ '))
 if sal <= 1250:
     sal_novo = sal + (sal * 15 / 100)
