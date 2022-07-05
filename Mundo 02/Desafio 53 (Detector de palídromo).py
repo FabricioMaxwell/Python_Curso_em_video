@@ -1,11 +1,11 @@
-frase = str(input('Digite uma frase: ')).upper().replace(' ', '')
+frase = str(input('Digite uma frase: ')).upper().replace(' ', '').strip()
 
 inverter = frase[:: -1]
 
 for c in inverter:
-    print(f'O inverso de {frase} é {inverter}')
+    print(f'{c}', end='')
 
 if frase == inverter:
-    print('Temos um palímetro!')
+    print('\nTemos um palímetro!')
 else:
-    print('A frase digitada não é um palíndromo!')
+    print('\nA frase digitada não é um palíndromo!')
