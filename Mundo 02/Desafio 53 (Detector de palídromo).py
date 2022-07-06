@@ -1,11 +1,16 @@
-frase = str(input('Digite uma frase: ')).upper().replace(' ', '').strip()
+frase = str(input('Digite uma frase: ')).strip().upper()
 
-inverter = frase[:: -1]
+#gerar uma lista
+palavras = frase.split()
+#juntar a palavra
+junto = ''.join(palavras)
+inverso = ''
 
-for c in inverter:
-    print(f'{c}', end='')
+for letra in range(len(junto) -1, -1, -1):
+    inverso += junto[letra]
+print(f'O inverso de {junto} é {inverso}')
 
-if frase == inverter:
-    print('\nTemos um palímetro!')
+if inverso == junto:
+    print('Temos um palíndromo!')
 else:
-    print('\nA frase digitada não é um palíndromo!')
+    print('A frase digitada não é um palíndromo!')
