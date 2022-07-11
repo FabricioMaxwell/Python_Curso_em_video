@@ -1,5 +1,7 @@
-soma = 0
-dados_clientes = {}
+soma_idade = 0
+média_idade = 0
+maior_idade = 0
+nome_velho = ''
 
 for p in range(1, 5):
     print(f'----- {p}ª PESSOA -----')
@@ -7,16 +9,18 @@ for p in range(1, 5):
     nome = str(input('Nome: '))
     idade = int(input('Idade: '))
     sexo = str(input('Sexo [M/F]: '))
-    dados_clientes[nome] = {
-    "nome": nome
-    "idade": idade
-    "sexo": sexo    
-    }
     
-    soma += idade
-    média = soma / p
-    
+    soma_idade += idade 
+    média_idade = soma_idade / 4
 
-print(f'A média de idade do grupo é de {média} anos.')
-print(f'O homem mais velho tem {max(idade)} e se chama {nome[0]}')
+    if p == 1 and sexo in 'Mn':
+        maior_idade = idade
+        nome_velho = nome
+    else:
+        
+        
+
+
+print(f'A média de idade do grupo é de {} anos.')
+print(f'O homem mais velho tem {} e se chama {}')
 
