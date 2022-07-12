@@ -2,7 +2,7 @@ from random import randint
 
 print('Sou seu computador...')
 
-computador = randint(0, 10)
+computador = randint(0, 10) # computador sorteando
 print('Acabei de pensar em um número entre 0 e 10.')
 print('Será que você consegue adivinhar  qual foi? ')
 
