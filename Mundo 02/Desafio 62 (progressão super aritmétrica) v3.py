@@ -12,3 +12,11 @@ while cont < 11:
      termo += razão
      cont += 1
 
+
+          if termo2 != 0: 
+               termo2 = int(input('\nQuantos termo você quer mostrar mais? '))
+               print(f'\n{termo2} ->', end=' PAUSA ')
+               termo2 += razão
+               cont += 1
+          else:
+               print(f'\nProgressão finalizada com {cont} termos mostrados.')
